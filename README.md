@@ -7,6 +7,7 @@ Some features like:
 - ESLint/Prettier configuration
 - CI/CD (GitHub Actions)
 - Automated testing
+- AI service (cannot be showed)
 
 are not yet implemented but are planned and can be easily added as the structure is ready.
 
