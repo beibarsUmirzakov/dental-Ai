@@ -1,0 +1,29 @@
+.app-layou{
+  display: flow;
+  gap: 15px;
+}
+@media (min-width: 1024px) {
+  .main-content {
+    margin-left: 200px;
+    padding: 30px;
+    background-color: #f6f6f6;
+    min-height: 100vh;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+    background-color: #f6f6f6;
+    min-height: calc(100vh - 60px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .main-content {
+    padding: 20px;
+    background-color: #f6f6f6;
+    min-height: 100vh;
+  }
+}

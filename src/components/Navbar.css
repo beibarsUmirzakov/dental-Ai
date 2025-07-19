@@ -1,0 +1,83 @@
+/* Общие стили */
+.nav-content {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-content:hover,
+.active {
+    font-weight: bold;
+    color: #00aced;
+}
+
+/* По умолчанию скрываем */
+.navbar-desktop, .navbar-mobile {
+    display: none;
+}
+.nav-content svg {
+    margin-right: 8px; /* или больше, если хочешь, например 12px */
+    vertical-align: middle;
+}
+.nav-content svg {
+    width: 25px;
+    height: 25px;
+}
+
+/* 1024 и больше — боковое меню */
+@media (min-width: 1024px) {
+    .navbar-desktop {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        background-color: #001f3f;
+        color: white;
+        padding: 20px;
+        min-height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .nav-content svg {
+        width: 20px;
+        height: 20px;
+    }
+    .navbar-desktop .logo {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .navbar-desktop nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* 768 и меньше — нижнее меню */
+@media (max-width: 768px) {
+    .navbar-mobile {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #001f3f;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1000;
+    }
+    .nav-content svg {
+        width: 18px;
+        height: 18px;
+    }
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .nav-content img.icon {
+        width: 24px;
+        height: 24px;
+    }
+}
